@@ -1,0 +1,5 @@
+{
+  "name": "UNDACTED",
+  "description": "An educational OSINT tool for analyzing redacted documents using digital forensics techniques.",
+  "requestFramePermissions": []
+}

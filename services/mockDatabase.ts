@@ -1,0 +1,135 @@
+import { Profile } from '../types';
+
+// Comprehensive OSINT database derived from the provided dataset
+export const MOCK_DATABASE: Profile[] = [
+  { id: '1', name: 'Jeevacation', email: 'jeevacation@gmail.com', role: 'Primary Subject', clearance: 'RESTRICTED' },
+  { id: '2', name: 'Alan Dershowitz', email: 'dersh@law.harvard.edu', role: 'Legal Counsel', clearance: 'SECRET' },
+  { id: '3', name: 'Bill Gates', email: 'Classified', role: 'Philanthropist', clearance: 'TS' },
+  { id: '4', name: 'Larry Summers', email: 'lhsoffice@lawrencesummers.com', role: 'Economic Advisor', clearance: 'TS/SCI' },
+  { id: '5', name: 'Steve Bannon', email: 'steve@arc-ent.com', role: 'Media Strategy', clearance: 'RESTRICTED' },
+  { id: '6', name: 'Ehud Barak', email: 'ehbarak1@gmail.com', role: 'Foreign Official', clearance: 'TS' },
+  { id: '7', name: 'Leon Black', email: 'Classified', role: 'Finance Executive', clearance: 'CONFIDENTIAL' },
+  { id: '8', name: 'Noam Chomsky', email: 'chomsky@mit.edu', role: 'Academic', clearance: 'PUBLIC' },
+  { id: '9', name: 'Peter Thiel', email: 'Classified', role: 'Venture Capital', clearance: 'SECRET' },
+  { id: '10', name: 'Joi Ito', email: 'ji@media.mit.edu', role: 'Research Director', clearance: 'RESTRICTED' },
+  { id: '11', name: 'Ghislaine Maxwell', email: 'ghislaine@theterramarproject.org', role: 'Subject B', clearance: 'RESTRICTED' },
+  { id: '12', name: 'Jeffrey Epstein', email: 'jeffrey@jeffreyepstein.org', role: 'Target Alpha', clearance: 'BLACK' },
+  { id: '13', name: 'Nadia Marcinkova', email: 'nadja2102@yahoo.com', role: 'Associate', clearance: 'CONFIDENTIAL' },
+  { id: '14', name: 'Sarah Kellen', email: 'skellen2@nysgmail.com', role: 'Executive Staff', clearance: 'RESTRICTED' },
+  { id: '15', name: 'Adriana Lima', email: 'adrianalima@mac.com', role: 'Public Figure', clearance: 'NONE' },
+  { id: '16', name: 'Al Seckel', email: 'aseckel@yahoo.com', role: 'Researcher', clearance: 'PUBLIC' },
+  { id: '17', name: 'Anas Alrasheed', email: 'anasalrasheed@gmail.com', role: 'Public Relations', clearance: 'UNCLASSIFIED' },
+  { id: '18', name: 'Andrew Friendly', email: 'Classified', role: 'Advisor', clearance: 'SECRET' },
+  { id: '19', name: 'Ariane De Rothschild', email: 'ader@aderfam.ch', role: 'Banking Executive', clearance: 'CONFIDENTIAL' },
+  { id: '20', name: 'Barbro Ehnbom', email: 'behnbom@aol.com', role: 'Networking', clearance: 'UNCLASSIFIED' },
+  { id: '21', name: 'Barnaby Marsh', email: 'barnaby.marsh@gmail.com', role: 'Philanthropy Advisor', clearance: 'CONFIDENTIAL' },
+  { id: '22', name: 'Ben Goertzel', email: 'ben@goertzel.org', role: 'AI Scientist', clearance: 'PUBLIC' },
+  { id: '23', name: 'Boris Nikolic', email: 'Boris.Nikolic@bgc3.com', role: 'Science Advisor', clearance: 'SECRET' },
+  { id: '24', name: 'Brad Karp', email: 'bkarp@paulweiss.com', role: 'Attorney', clearance: 'CONFIDENTIAL' },
+  { id: '25', name: 'Bruce Lyons', email: 'brucelyons@aol.com', role: 'Consultant', clearance: 'UNCLASSIFIED' },
+  { id: '26', name: 'Cecile De Jongh', email: 'ceciledejongh@yahoo.com', role: 'Regional Liaison', clearance: 'RESTRICTED' },
+  { id: '27', name: 'Charles Miller', email: 'cmi3540012@aol.com', role: 'Legal Staff', clearance: 'UNCLASSIFIED' },
+  { id: '28', name: 'Christina Galbraith', email: 'christina@jeffreyepstein.org', role: 'Foundation Staff', clearance: 'RESTRICTED' },
+  { id: '29', name: 'Clifford Saron', email: 'cdsaron@ucdavis.edu', role: 'Neuroscientist', clearance: 'PUBLIC' },
+  { id: '30', name: 'Dan Chipman', email: 'dan_chipman@yahoo.com', role: 'Operations', clearance: 'NONE' },
+  { id: '31', name: 'Darren Indyke', email: 'dkiesq@aol.com', role: 'Lead Counsel', clearance: 'SECRET' },
+  { id: '32', name: 'David Blaine', email: 'Classified', role: 'Associate', clearance: 'NONE' },
+  { id: '33', name: 'David Fiszel', email: 'Classified', role: 'Finance', clearance: 'CONFIDENTIAL' },
+  { id: '34', name: 'David Grosof', email: 'grosof@sloan.mit.edu', role: 'MIT Liaison', clearance: 'RESTRICTED' },
+  { id: '35', name: 'David Schoen', email: 'jagesq@bellsouth.net', role: 'Defense Counsel', clearance: 'SECRET' },
+  { id: '36', name: 'Deepak Chopra', email: 'Classified', role: 'Author', clearance: 'UNCLASSIFIED' },
+  { id: '37', name: 'Ed Boyden', email: 'Classified', role: 'Neuroscientist', clearance: 'PUBLIC' },
+  { id: '38', name: 'Eduardo A Robles', email: 'edrobles101@gmail.com', role: 'Architect', clearance: 'NONE' },
+  { id: '39', name: 'Eva Dubin', email: 'evadubin@hotmail.com', role: 'Medical Doctor', clearance: 'RESTRICTED' },
+  { id: '40', name: 'Faith Kates', email: 'Classified', role: 'Talent Agent', clearance: 'NONE' },
+  { id: '41', name: 'Fred Haddad', email: 'Classified', role: 'Attorney', clearance: 'SECRET' },
+  { id: '42', name: 'Guy Lewis', email: 'glewis@lewistein.com', role: 'Legal Expert', clearance: 'SECRET' },
+  { id: '43', name: 'Henry Jarecki', email: 'hj@jarecki.com', role: 'Finance/Scholar', clearance: 'CONFIDENTIAL' },
+  { id: '44', name: 'Howard Rubenstein', email: 'hrubenstein@rubenstein.com', role: 'PR Executive', clearance: 'UNCLASSIFIED' },
+  { id: '45', name: 'Janusz Banasiak', email: 'janusz53@me.com', role: 'Staff Manager', clearance: 'RESTRICTED' },
+  { id: '46', name: 'Jay Lefkowitz', email: 'JLefkowitz@kirkland.com', role: 'Partner Attorney', clearance: 'SECRET' },
+  { id: '47', name: 'Jean Luc Brunel', email: 'jeanluc@mc2mm.com', role: 'Talent Manager', clearance: 'RESTRICTED' },
+  { id: '48', name: 'Jes Staley', email: 'jes.staley@jpmorgan.com', role: 'Banking Executive', clearance: 'SECRET' },
+  { id: '49', name: 'John Amerling', email: 'john_amerling@earthlink.net', role: 'Attorney', clearance: 'UNCLASSIFIED' },
+  { id: '50', name: 'John Page', email: 'John.Page/PalmBeach', role: 'Local Government', clearance: 'RESTRICTED' },
+  { id: '51', name: 'Karyna Shuliak', email: 'karynashuliak@icloud.com', role: 'Associate', clearance: 'CONFIDENTIAL' },
+  { id: '52', name: 'Kathy Ruemmler', email: 'kathyruemmler@gmail.com', role: 'Former Advisor', clearance: 'TS/SCI' },
+  { id: '53', name: 'Ken Starr', email: 'Ken.Starr@pepperdine.edu', role: 'Legal Academic', clearance: 'TS' },
+  { id: '54', name: 'Kirk Blouin', email: 'Kirk.Blouin/PalmBeach', role: 'Law Enforcement', clearance: 'SECRET' },
+  { id: '55', name: 'Lawrence Krauss', email: 'krauss@asu.edu', role: 'Theoretical Physicist', clearance: 'PUBLIC' },
+  { id: '56', name: 'Lilly Ann Sanchez', email: 'LAS@FOWLER-WHITE.COM', role: 'Attorney', clearance: 'CONFIDENTIAL' },
+  { id: '57', name: 'Linda Stone', email: 'Classified', role: 'Tech Consultant', clearance: 'UNCLASSIFIED' },
+  { id: '58', name: 'Lisa New', email: 'Classified', role: 'Scholar', clearance: 'PUBLIC' },
+  { id: '59', name: 'Lisa Randall', email: 'Classified', role: 'Physicist', clearance: 'PUBLIC' },
+  { id: '60', name: 'Masha Drokova', email: 'Classified', role: 'Venture Capital', clearance: 'CONFIDENTIAL' },
+  { id: '61', name: 'Martin G Weinberg', email: 'Classified', role: 'Attorney', clearance: 'SECRET' },
+  { id: '62', name: 'Martin Nowak', email: 'nowak@fas.harvard.edu', role: 'Biologist', clearance: 'PUBLIC' },
+  { id: '63', name: 'Marvin Minsky', email: 'minsky@media.mit.edu', role: 'AI Pioneer', clearance: 'PUBLIC' },
+  { id: '64', name: 'Matt Ridley', email: 'Classified', role: 'Author', clearance: 'NONE' },
+  { id: '65', name: 'Matthew Hiltzik', email: 'Classified', role: 'Communications', clearance: 'UNCLASSIFIED' },
+  { id: '66', name: 'Melanie Walker', email: 'Classified', role: 'Advisor', clearance: 'CONFIDENTIAL' },
+  { id: '67', name: 'Michael Wolff', email: 'michaelwolffnyc@gmail.com', role: 'Journalist', clearance: 'NONE' },
+  { id: '68', name: 'Mortimer Zuckerman', email: 'Classified', role: 'Media Owner', clearance: 'CONFIDENTIAL' },
+  { id: '69', name: 'Neil Gershenfeld', email: 'Classified', role: 'Scientist', clearance: 'PUBLIC' },
+  { id: '70', name: 'Nicholas Ribis', email: 'Classified', role: 'Business Exec', clearance: 'UNCLASSIFIED' },
+  { id: '71', name: 'Nicole Junkermann', email: 'junkermann@junkermanngroup.com', role: 'Entrepreneur', clearance: 'CONFIDENTIAL' },
+  { id: '72', name: 'Oliver Goodenough', email: 'Classified', role: 'Legal Scholar', clearance: 'UNCLASSIFIED' },
+  { id: '73', name: 'Paul Barrett', email: 'Classified', role: 'Advisor', clearance: 'CONFIDENTIAL' },
+  { id: '74', name: 'Paul Krassner', email: 'paulkrassner@roadrunner.com', role: 'Writer', clearance: 'NONE' },
+  { id: '75', name: 'Paul Romer', email: 'Classified', role: 'Economist', clearance: 'PUBLIC' },
+  { id: '76', name: 'Paul Schulte', email: 'Classified', role: 'Strategist', clearance: 'CONFIDENTIAL' },
+  { id: '77', name: 'Peggy Siegal', email: 'Peggy@peggysiegal.com', role: 'Publicist', clearance: 'NONE' },
+  { id: '78', name: 'Peter Aldhous', email: 'Classified', role: 'Journalist', clearance: 'NONE' },
+  { id: '79', name: 'Peter Mandelson', email: 'petermandelson@btinternet.com', role: 'Politician', clearance: 'TS' },
+  { id: '80', name: 'Petra Nemcova', email: 'petra.nemcova@happyheartsfund.org', role: 'Philanthropist', clearance: 'NONE' },
+  { id: '81', name: 'Philip Kafka', email: 'pk@princeconcepts.com', role: 'Developer', clearance: 'NONE' },
+  { id: '82', name: 'Reid Hoffman', email: 'Classified', role: 'Tech Founder', clearance: 'SECRET' },
+  { id: '83', name: 'Remzi Kulen', email: 'Classified', role: 'Legal Staff', clearance: 'UNCLASSIFIED' },
+  { id: '84', name: 'Richard Kahn', email: 'rkahn@nysgmail.com', role: 'Lead Manager', clearance: 'RESTRICTED' },
+  { id: '85', name: 'Robert Lawrence Kuhn', email: 'Classified', role: 'Author/Exec', clearance: 'CONFIDENTIAL' },
+  { id: '86', name: 'Robert Trivers', email: 'Classified', role: 'Biologist', clearance: 'PUBLIC' },
+  { id: '87', name: 'Roger Schank', email: 'Classified', role: 'AI Researcher', clearance: 'PUBLIC' },
+  { id: '88', name: 'Ross Gow', email: 'Classified', role: 'Communications', clearance: 'UNCLASSIFIED' },
+  { id: '89', name: 'Roy Black', email: 'RBLACK@royblack.com', role: 'Attorney', clearance: 'SECRET' },
+  { id: '90', name: 'Sam Harris', email: 'Classified', role: 'Author', clearance: 'NONE' },
+  { id: '91', name: 'Scott J Link', email: 'Classified', role: 'Attorney', clearance: 'UNCLASSIFIED' },
+  { id: '92', name: 'Sharon Churcher', email: 'Classified', role: 'Journalist', clearance: 'NONE' },
+  { id: '93', name: 'Soon Yi Previn', email: 'Classified', role: 'Public Figure', clearance: 'NONE' },
+  { id: '94', name: 'Stanley Rosenberg', email: 'Classified', role: 'Consultant', clearance: 'UNCLASSIFIED' },
+  { id: '95', name: 'Stephen M Kosslyn', email: 'smk@wjh.harvard.edu', role: 'Psychologist', clearance: 'PUBLIC' },
+  { id: '96', name: 'Steven Sinofsky', email: 'steven@psylo.co', role: 'Tech Exec', clearance: 'CONFIDENTIAL' },
+  { id: '97', name: 'Sultan Bin Sulayem', email: 'Sultan.BinSulayem@dubaiworld.ae', role: 'CEO/Official', clearance: 'DIPLOMATIC' },
+  { id: '98', name: 'Terry Kafka', email: 'terry@impactoutdoor.com', role: 'Business Owner', clearance: 'UNCLASSIFIED' },
+  { id: '99', name: 'Thorbjørn Jagland', email: 'Classified', role: 'Politician', clearance: 'TS' },
+  { id: '100', name: 'Tim Zagat', email: 'Classified', role: 'Founder', clearance: 'UNCLASSIFIED' },
+  { id: '101', name: 'Tom Pritzker', email: 'TPritzker@pritzkerorg.com', role: 'Executive', clearance: 'CONFIDENTIAL' },
+  { id: '102', name: 'Tonja Haddad Coleman', email: 'haddadfm@aol.com', role: 'Legal Professional', clearance: 'UNCLASSIFIED' },
+  { id: '103', name: 'Tyler Shears', email: 'Classified', role: 'Associate', clearance: 'UNCLASSIFIED' },
+  { id: '104', name: 'Vinit Sahni', email: 'Classified', role: 'Finance', clearance: 'CONFIDENTIAL' },
+  { id: '105', name: 'Vinoda Basnayake', email: 'Classified', role: 'Strategist', clearance: 'CONFIDENTIAL' },
+  { id: '106', name: 'Will Bohlen', email: 'Classified', role: 'Consultant', clearance: 'UNCLASSIFIED' },
+  { id: '107', name: 'William L Blum', email: 'Classified', role: 'Attorney', clearance: 'UNCLASSIFIED' },
+  { id: '108', name: 'Woodson Merrell', email: 'docmerrell@msn.com', role: 'Medical Doctor', clearance: 'UNCLASSIFIED' },
+  { id: '109', name: 'Zubair Khan', email: 'Classified', role: 'Business Associate', clearance: 'UNCLASSIFIED' },
+  { id: '110', name: 'Omri Hayner', email: 'omri.hayner@gmail.com', role: 'Associate', clearance: 'NONE' }
+];
+
+/**
+ * Searches the forensic database for profiles that match the estimated character length
+ * of a redacted block, within a certain tolerance.
+ * 
+ * @param estimatedLength The estimated character count of the redacted text
+ * @param tolerance Allowable variance in character length (+/-)
+ * @returns An array of matching profiles
+ */
+export const searchDatabase = (estimatedLength: number, tolerance: number = 2): Profile[] => {
+  return MOCK_DATABASE.filter(profile => {
+    const diff = Math.abs(profile.name.length - estimatedLength);
+    return diff <= tolerance;
+  }).sort((a, b) => {
+    // Sort by closest match first
+    const diffA = Math.abs(a.name.length - estimatedLength);
+    const diffB = Math.abs(b.name.length - estimatedLength);
+    return diffA - diffB;
+  }).slice(0, 5); // Return top 5 matches
+};
